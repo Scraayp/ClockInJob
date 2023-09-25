@@ -1,10 +1,10 @@
 function GetPlayerDiscord()
-	local steamid = false
-	local license = false
-	local discord = false
-	local xbl = false
-	local liveid = false
-	local ip = false
+	local steamid = ''
+	local license = ''
+	local discord = ''
+	local xbl = ''
+	local liveid = ''
+	local ip = ''
 
 	for k, v in pairs(GetPlayerIdentifiers(source)) do
 		print(v)

@@ -1,19 +1,12 @@
-fx_version("cerulean")
-game("gta5")
+fx_version "cerulean"
+game "gta5"
 
-name("inklok_politie")
-description("A resource to make clocking in and out easier for the police/other jobs.")
-author("Scraayp")
-version("1.0.0")
+author "Scraayp"
+description "A resource to make clocking in and out easier for the police/other jobs."
+version "1.0.0"
 
-shared_scripts({
-	"config.lua",
-})
+resource_type "gametype" { name = "KlokIn" }
 
-client_scripts({
-	"client/*.lua",
-})
-
-server_scripts({
-	"server/*.lua",
-})
+shared_script "config.lua"
+client_script "mymode_client.lua"
+server_script "server_scripts.lua"
